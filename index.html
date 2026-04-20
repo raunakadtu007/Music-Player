@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>My Music Player 🎵</h1>
+</header>
+
+<div class="player">
+  <img src="https://via.placeholder.com/200" alt="Album Art" id="cover">
+  <h2 id="title">Song Name</h2>
+  
+  <audio id="audio" controls>
+    <source src="song1.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <div class="controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="playPause()">⏯</button>
+    <button onclick="nextSong()">⏭</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
